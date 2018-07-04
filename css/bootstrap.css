@@ -4841,7 +4841,7 @@ input[type="button"].btn-block {
 
 .jumbotron {
   padding: 2rem 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   background-color: #e9ecef;
   border-radius: 0.3rem;
 }
@@ -4859,11 +4859,11 @@ input[type="button"].btn-block {
 }
 
 .alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
 }
 
 .alert-heading {
