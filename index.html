@@ -15,8 +15,7 @@
     <meta name="theme-color" content="#273c75">
     <!-- Windows Mobile -->
     <meta name="msapplication-navbutton-color" content="#273c75">
-
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <!-- Favicons -->
@@ -34,10 +33,12 @@
 
         gtag('config', 'UA-121801387-1');
     </script>
-
+    <!-- JS -->
+    <script src="js/strange.js"></script>
+    <!-- By order of The Queen, Her Majesty; Let the Content Begin -->
     <title>strangeBits</title>
     <nav class="navbar fixed-top navbar-light bg-light py-0">
-        <a href="index.html" class="navbar-brand"><span style="color: #273c75">strange<span style="color: #FF5722">Bits</span></span></a>
+        <a href="index.html" class="navbar-brand navbar-stuff"><span style="color: #273c75">strange<span style="color: #FF5722">Bits</span></span></a>
     </nav>
 </head>
 <body>
@@ -46,35 +47,52 @@
             <div class="container">
                 <h1 class="display-4 text-white-50">Welcome to strange<span style="color: #FF5722">Bits</span></h1>
                 <hr class="text-white-50">
-                <p class="lead text-white-50">A blog with highly detailed articles about subjects of technology</p>
+                <p class="lead text-white-50">A blog with highly detailed articles about technology</p>
             </div>
         </div>
         <div class="card-deck card-columns">
             <div class="card" onclick="location.href='article.html';" style="cursor: pointer;">
-                <img class="card-img-top" src="img/1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/0.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="img/1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/0.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="img/1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/0.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
             </div>
         </div>
+        <div class="container py-2" id="footer">
+            <div class="row row-bottom-padded-sm">
+                <div class="col-md-12">
+                    <p class="copyright text-center text-white-50">&mdash; Copyright &copy; 2018 The strageBits Project. All Rights Reserved. &mdash;</p>
+                    <p class="copyright text-center text-white-50">&mdash; <a href=policy.html target=_blank><span style="color: #FF5722">Privacy and Cookie policy</span></a> &mdash;</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <footer>
+    <div class="parent">
+        <nav class="navbar fixed-bottom navbar-light bg-light py-1.5" id="bottom-bar">
+            <span class="navbar-text navbar-stuff">Would you like to enable Google Analytics? <a href="https://en.wikipedia.org/wiki/Google_Analytics" target="_blank">Learn more about Google Analytics</a></span>
+            <div class="buttons" style="margin-right: 15%;">
+                <button type="button" class="btn btn-primary">Yes</button>
+                <button type="button" class="btn btn-secondary">No</button>
+            </div>
+        </nav>
+    </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
