@@ -50,7 +50,6 @@
     margin-top: 0.5%;
 }
 .jumbotron {
-    background-color: #273c75;
     border-radius: 0.25rem;
 }
 .card-text, h1, h2, h3, h4, h5, h6, p, a {
@@ -72,6 +71,7 @@
 }
 body {
     margin-bottom: auto;
+    background-color: #f8f9fa;
 }
 .buttons {
     float: left;
@@ -91,4 +91,18 @@ body {
 #article > .p {
     max-width: calc(30em * 0.5);
     font-size: 20px;
+}
+#article {
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+}
+.navbar {
+    border-bottom-left-radius: 0.15rem;
+    border-bottom-right-radius: 0.15rem;
+}
+.bg-strangeBlue {
+    background-color: #273c75;
+}
+.strangeBlue {
+    color: #273c75;
 }
