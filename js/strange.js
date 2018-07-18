@@ -11,3 +11,7 @@ function disableGA() {
     console.log("Google Analytics was NOT enabled");
     document.getElementById("pop").style.display = "none";
 }
+
+if(navigator.doNotTrack == 1) {
+    disableGA();
+}
