@@ -31,8 +31,6 @@
     <link rel="apple-touch-icon" href="img/favicon.png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- JS -->
-    <script async src="js/strange.min.js"></script>
     <!-- By order of The Queen, Her Majesty; Let the Content Begin -->
     <title>strangeBits</title>
     <nav class="navbar fixed-top navbar-light bg-strangeBlue py-0">
@@ -78,6 +76,18 @@
             </div>
         </nav>
     </div>
+    <!-- JS -->
+    <script>
+        if(navigator.doNotTrack == 1) {
+            document.getElementById("pop").style.display = "none";
+            console.log("Google Analytics was NOT enabled");
+        } else {
+            let script = document.createElement('script');
+            script.setAttribute('src', 'js/strange.min.js');
+            script.setAttribute('type', 'text/javascript');
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

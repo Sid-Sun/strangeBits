@@ -62,7 +62,3 @@ function getCookie(name) {
     }
     return null;
 }
-
-if(navigator.doNotTrack == 1) {
-    disableGA();
-}
