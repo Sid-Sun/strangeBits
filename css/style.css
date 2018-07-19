@@ -51,9 +51,9 @@
     background-color: #273c75;
     border-radius: 0.25rem;
 }
-.card-text {
+.card-text, h1, h2, h3, h4, h5, h6, p, a {
     font-size: 17px;
-    font-family: 'PT Serif', serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 130%;
 }
 .card-title {
@@ -65,7 +65,24 @@
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
 }
-/* Overrides for number of cards */
+/* Article specific CSS */
+#article {
+    width: 36em;
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 150%;
+}
+#artile_jumbo {
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-position: 0% 25%;
+    background-repeat: no-repeat;
+}
+#article > .p {
+    max-width: calc(30em * 0.5);
+    font-size: 20px;
+}
