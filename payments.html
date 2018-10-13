@@ -18,6 +18,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <style>
+        #artile_jumbo {
+            background-image: url("img/0.jpg");
+            background-size: cover;
+            background-position: 0% 25%;
+            background-repeat: no-repeat;
+        }
+    </style>
     <!-- Favicons -->
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
@@ -30,40 +38,25 @@
     </nav>
 </head>
 <body>
-    <div class="parent">
-        <div class="jumbotron jumbotron-fluid bg-white">
-            <div class="container">
-                <h1 class="display-5 text-black-50">Welcome to strange<span class="strangeBlue">Bits</span></h1>
-                <hr style="border-color: #273c75">
-                <p class="lead text-black-50">A blog with highly detailed tech articles</p>
-            </div>
+<div class="parent">
+    <div class="jumbotron jumbotron-fluid" id="artile_jumbo">
+        <div class="container">
+            <h1 class="display-5 text-white-50">Why is every company suddenly making its <span style="color: #FF5722">own payment solution?</span></h1>
+            <hr class="text-white-50">
         </div>
-        <div class="card-deck card-columns">
-            <div class="card" onclick="location.href='payments.html';" style="cursor: pointer;">
-                <img class="card-img-top" src="img/1.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Why is every company suddenly making its own payment solution?</h5>
-                    <p class="card-text">Let’s find out why they’re doing so.</p>
-                </div>
-            </div>
-            <div class="card" onclick="location.href='truncation.html';" style="cursor: pointer;">
-                <img class="card-img-top" src="img/2.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Why are numbers after decimal truncated in programming languages while doing integer arithmetic?</h5>
-                    <p class="card-text">More interesting than you might think.</p>
-                </div>
-            </div>
-
-        </div>
-        <div class="jumbotron jumbotron-fluid py-1 bg-strangeBlue">
-            <div class="container">
-                <div class="col-md-12">
-                    <p class="copyright text-center text-white-50">&mdash; Copyright &copy; 2018 The strangeBits Project. All Rights Reserved. &mdash;</p>
-                    <p class="copyright text-center text-white-50">&mdash; <a href=policy.html target=_blank><span style="color: #FF5722">Privacy and Cookie policy</span></a> &mdash;</p>
-                </div>
+    </div>
+    <div class="container" id="article">
+        <p class="h5 p-t-1">Why is every single major company making its own mobile payment solution in India (or coming to India, like PayPal) and giving users cashback and other offers even though if anything, they’re losing money after this spending time, money and resources on making these (then advertising, giving cashback offers, discounts on payment etc.) which could go towards something else, but everyone seems to be focused on mobile payments. The reason is not financial data collection that’s where even these companies draw a line and your interests are worth more than info about your finances because ads on that is much more beneficial and less controversial. The thing is the mobile payment market in India does not have anything that is dominating (like messaging service is dominated for a large part by WhatsApp) and these companies do want to have payment solution which is easier to use than cards because storing card details requires a lot of security and is less convenient than e-wallets (making a proper solution for card payment is expensive so they’d rather rely on e-wallets) for their services and since there is no dominant player they’ve three options either wait for there to be one and embrace that, or partner with multiple payment solutions which’ll increase their cost, or get in the game themselves (since making a proper card payment and maintaining it will cost a lot anyway might as well spend a little more) and give cashback, discounts etc. to get good userbase and try to be the dominating player partnering with other services and later earning money. Any company with the resources to do so, will like to go with option three and make their own payment solution. </p>
+    </div>
+    <div class="jumbotron jumbotron-fluid py-1 bg-strangeBlue">
+        <div class="container">
+            <div class="col-md-12">
+                <p class="copyright text-center h6 text-white-50">&mdash; Copyright &copy; 2018 The strangeBits Project. All Rights Reserved. &mdash;</p>
+                <p class="copyright text-center h6 text-white-50">&mdash; <a href=policy.html target=_blank><span style="color: #FF5722">Privacy and Cookie policy</span></a> &mdash;</p>
             </div>
         </div>
     </div>
+</div>
 </body>
 <footer>
     <div class="parent" id="pop">

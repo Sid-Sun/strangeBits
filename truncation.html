@@ -18,6 +18,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <style>
+        #artile_jumbo {
+            background-image: url("img/0.jpg");
+            background-size: cover;
+            background-position: 0% 25%;
+            background-repeat: no-repeat;
+        }
+    </style>
     <!-- Favicons -->
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
@@ -30,40 +38,25 @@
     </nav>
 </head>
 <body>
-    <div class="parent">
-        <div class="jumbotron jumbotron-fluid bg-white">
-            <div class="container">
-                <h1 class="display-5 text-black-50">Welcome to strange<span class="strangeBlue">Bits</span></h1>
-                <hr style="border-color: #273c75">
-                <p class="lead text-black-50">A blog with highly detailed tech articles</p>
-            </div>
+<div class="parent">
+    <div class="jumbotron jumbotron-fluid" id="artile_jumbo">
+        <div class="container">
+            <h1 class="display-5 text-white-50">Why are numbers after decimal truncated in C while doing <span style="color: #FF5722">integer arithmetic?</span></h1>
+            <hr class="text-white-50">
         </div>
-        <div class="card-deck card-columns">
-            <div class="card" onclick="location.href='payments.html';" style="cursor: pointer;">
-                <img class="card-img-top" src="img/1.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Why is every company suddenly making its own payment solution?</h5>
-                    <p class="card-text">Let’s find out why they’re doing so.</p>
-                </div>
-            </div>
-            <div class="card" onclick="location.href='truncation.html';" style="cursor: pointer;">
-                <img class="card-img-top" src="img/2.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Why are numbers after decimal truncated in programming languages while doing integer arithmetic?</h5>
-                    <p class="card-text">More interesting than you might think.</p>
-                </div>
-            </div>
-
-        </div>
-        <div class="jumbotron jumbotron-fluid py-1 bg-strangeBlue">
-            <div class="container">
-                <div class="col-md-12">
-                    <p class="copyright text-center text-white-50">&mdash; Copyright &copy; 2018 The strangeBits Project. All Rights Reserved. &mdash;</p>
-                    <p class="copyright text-center text-white-50">&mdash; <a href=policy.html target=_blank><span style="color: #FF5722">Privacy and Cookie policy</span></a> &mdash;</p>
-                </div>
+    </div>
+    <div class="container" id="article">
+        <p class="h5 p-t-1">There’s actually a very senseful reason why C [and some other programming languages like python(maybe not intentionally)] do it; C was designed to be a very efficient language (as a result of which, it is one of the fastest programming languages which is why it is the preferred programming language for development of kernels, drivers etc.), and floating-point arithmetic is less efficient than integer arithmetic. Following this principle of efficiency, the compiler should not automatically slow down things without very good reasons, while automatically moving from fast integers to slow floating-point arithmetic could easily be seen as violating that principle. The creators of C were working on operating systems, compilers, and other kinds of system software where integer division is sufficient to a large extent. Floating-point arithmetic was included in the language, but it was often made optional. You might think that well, to complete the division, it’ll have to calculate after decimal so why not assign it too? Actually, if you divide say 15 by 10 (15/10) the computer quite literally sees how many times can ten go in 15? Once. It stops there and stores just it then moves on never bothering to see anymore unless explicitly said to do floating point division.<br><br>Interesting fact: Processors include a dedicated F.P.U. (Floating Point Unit) which can process floating point arithmetic much faster and efficiently, but it is still slower than integer arithmetic.</p>
+    </div>
+    <div class="jumbotron jumbotron-fluid py-1 bg-strangeBlue">
+        <div class="container">
+            <div class="col-md-12">
+                <p class="copyright text-center h6 text-white-50">&mdash; Copyright &copy; 2018 The strangeBits Project. All Rights Reserved. &mdash;</p>
+                <p class="copyright text-center h6 text-white-50">&mdash; <a href=policy.html target=_blank><span style="color: #FF5722">Privacy and Cookie policy</span></a> &mdash;</p>
             </div>
         </div>
     </div>
+</div>
 </body>
 <footer>
     <div class="parent" id="pop">
